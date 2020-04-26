@@ -1,0 +1,21 @@
+{
+  "Pack": {
+    "files": [
+      {
+        "type": "image",
+        "key": "car",
+        "url": "./assets/images/car.png"
+      },
+      {
+        "type": "spritesheet",
+        "key": "road",
+        "url": "./assets/images/road.png",
+        "frameConfig": {
+          "frameWidth": 1002,
+          "frameHeight": 1002,
+          "spacing": 0
+        }
+      }
+    ]
+  }
+}

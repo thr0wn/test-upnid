@@ -1,12 +1,11 @@
-import React from 'react';
-import useGame from './game/Game';
+import React from "react";
+import useGame from "./game/Game";
+import MainScreen from "./screens/MainScreen";
 
 const App = () => {
-  useGame();
+  const game = useGame();
 
-  return (
-    <div />
-  );
-}
+  return <MainScreen game={game} />;
+};
 
 export default App;

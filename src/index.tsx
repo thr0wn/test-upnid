@@ -5,7 +5,13 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Press Start 2P';
+    src: url('./assets/fonts/PressStart2P-Regular.ttf');
+  }
+
   body {
+    font-family: 'Press Start 2P', Arial;
     overflow: hidden;
     padding: 0px;
     margin: 0px;
