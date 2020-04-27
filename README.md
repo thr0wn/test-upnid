@@ -1,6 +1,10 @@
 # Teste UPNID
 
-Demo: https://historical-weather.surge.sh
+[![Netlify Status](https://api.netlify.com/api/v1/badges/629fdffa-932e-4cd8-9947-aedca05a91b0/deploy-status)](https://app.netlify.com/sites/happy-archimedes-d937e9/deploys)
+
+Demo:
+Link 1: https://happy-archimedes-d937e9.netlify.app/
+Link 2: https://historical-weather.surge.sh
 
 [![](http://i.imgur.com/6aTnF06.png)]()
 [![](http://i.imgur.com/5Uj61QY.png)]()
