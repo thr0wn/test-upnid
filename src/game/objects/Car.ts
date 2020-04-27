@@ -1,3 +1,5 @@
+import GameScene from "../scenes/GameScene";
+
 class Car extends Phaser.GameObjects.Sprite {
   private keys: { [key: string]: Phaser.Input.Keyboard.Key };
 
@@ -52,15 +54,21 @@ class Car extends Phaser.GameObjects.Sprite {
       return;
     }
 
+    const joyStick = (this.scene as GameScene).joyStick;
+
     if (
-      (this.keys["A"].isDown || this.keys["left"].isDown) &&
+      (this.keys["A"].isDown ||
+        this.keys["left"].isDown ||
+        (joyStick && joyStick.left)) &&
       this.x >= this.displayWidth / 2
     ) {
       this.x -= (500 * pixelsPerGameUnit.x * delta) / 1000;
     }
 
     if (
-      (this.keys["D"].isDown || this.keys["right"].isDown) &&
+      (this.keys["D"].isDown ||
+        this.keys["right"].isDown ||
+        (joyStick && joyStick.right)) &&
       this.x <= this.scene.scale.width - this.displayWidth / 2
     ) {
       this.x += (500 * pixelsPerGameUnit.x * delta) / 1000;

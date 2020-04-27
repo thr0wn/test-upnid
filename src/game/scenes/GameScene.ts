@@ -1,18 +1,16 @@
+import VirtualJoystick from "phaser3-rex-plugins/plugins/input/virtualjoystick/VirtualJoyStick";
 import Car from "../objects/Car";
 
 class GameScene extends Phaser.Scene {
   car: Phaser.GameObjects.Sprite | undefined;
   background: Phaser.GameObjects.Sprite | undefined;
+  joyStick: any;
 
   constructor() {
     super({
       key: "GameScene",
     });
   }
-
-  init(): void {}
-
-  preload(): void {}
 
   create(): void {
     this.anims.create({
@@ -62,7 +60,11 @@ class GameScene extends Phaser.Scene {
               this.registry.set("started", true);
               this.registry.set("running", true);
               this.registry.set("counter", intialCounterValue);
-              this.game.input.keyboard.enabled = true;
+              if (!this.sys.game.device.os.desktop) {
+                this.addJoyStick();
+              } else {
+                this.game.input.keyboard.enabled = true;
+              }
               clearInterval(id);
             } else {
               this.registry.set("counter", counter);
@@ -71,6 +73,17 @@ class GameScene extends Phaser.Scene {
         }
       }
     );
+  }
+
+  addJoyStick() {
+    this.joyStick = new VirtualJoystick(this, {
+      x: this.scale.width / 2,
+      y: this.scale.height - 40,
+      radius: 30,
+      base: this.add.circle(0, 0, 25, 0x888887),
+      thumb: this.add.circle(0, 0, 12, 0xcccccc),
+      dir: "left&right",
+    });
   }
 
   update(time: number, delta: number): void {

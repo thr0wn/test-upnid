@@ -1,6 +1,6 @@
 # Teste UPNID
 
-Demo: https://vengeful-laborer.surge.sh
+Demo: https://historical-weather.surge.sh
 
 [![](http://i.imgur.com/6aTnF06.png)]()
 [![](http://i.imgur.com/5Uj61QY.png)]()
@@ -36,7 +36,7 @@ yarn build
 ---
 * Pause → ao pressionar ESC (ou outra tecla), o jogo é pausado
 * Mobile → e se o jogo pudesse ser jogado em um smartphone?
-    * Experiência similar no mobile, através do touch!
+    * Experiência similar no mobile, mas usando touch como controles!
 * Link Público → que tal gerar um link público em que qualquer pessoa pode acessar e jogar também? Você pode usar qualquer solução de hospedagem.
     * Link no começo da documentação.
 * Stack Upnid → na Upnid, usamos React (com Hooks), GraphQL e Styled Components na maioria dos nossos projetos front-end. Ao construir o jogo usando essas tecnologias, você mostrará que, além de um excelente desenvolvedor, também conhece bem o nosso stack!

@@ -11,8 +11,8 @@
         "key": "road",
         "url": "./assets/images/road.png",
         "frameConfig": {
-          "frameWidth": 1002,
-          "frameHeight": 1002,
+          "frameWidth": 1024,
+          "frameHeight": 1024,
           "spacing": 0
         }
       }

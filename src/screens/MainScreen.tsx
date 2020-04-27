@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import StyledMainScreen, {
-  StyledCenteredDiv,
-  StyledTopLeftDiv,
-} from "./MainScreen.styles";
+import { StyledCenteredDiv, StyledTopLeftDiv } from "./MainScreen.styles";
 import Button from "../components/button/Button";
 import Text from "../components/text/Text";
 import Input from "../components/input/Input";
@@ -53,7 +50,7 @@ const MainScreen: React.FC<{ game: Phaser.Game | undefined }> = ({ game }) => {
   };
 
   return (
-    <StyledMainScreen>
+    <>
       {gameState.preloading && (
         <StyledCenteredDiv>
           <Text>Carregando...</Text>
@@ -86,7 +83,7 @@ const MainScreen: React.FC<{ game: Phaser.Game | undefined }> = ({ game }) => {
           <Button onClick={resume}>Continuar</Button>
         </StyledCenteredDiv>
       )}
-    </StyledMainScreen>
+    </>
   );
 };
 

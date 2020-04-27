@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-const StyledMainScreen = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-`;
-
 export const StyledCenteredDiv = styled.div`
   position: absolute;
   left: 50%;
@@ -34,5 +26,3 @@ export const StyledTopLeftDiv = styled.div`
       margin-top: 12px;
   }
 `;
-
-export default StyledMainScreen;
