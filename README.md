@@ -2,8 +2,6 @@
 
 Demo: https://vengeful-laborer.surge.sh
 
-<iframe src="https://vengeful-laborer.surge.sh" height="600" width="600"></iframe>
-
 [![](http://i.imgur.com/6aTnF06.png)]()
 [![](http://i.imgur.com/5Uj61QY.png)]()
 [![](http://i.imgur.com/vhunqVM.png)]()
@@ -34,7 +32,7 @@ yarn start
 yarn build
 ```
 
-## Bonûs implementados
+## Bônus implementados
 ---
 * Pause → ao pressionar ESC (ou outra tecla), o jogo é pausado
 * Mobile → e se o jogo pudesse ser jogado em um smartphone?
